@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Tags</title>
+<style>
+body{
+    background-color:aquamarine;
+}
+#female{
+margin-left: 17px;
+}
+#button{
+    background-color:aqua;
+}
+#button:hover{
+    color:green;
+    opacity:1;
+}
+</style>
+</head>
+<body>
+<form>
+<div>
+<center>
+<h1>Enter Your Name</h1>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  </center>
+</div>
+<br>
+<div>
+<center>
+<h1>Select Your Gender</h1>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+</center>
+</div>
+<br>
+<div>
+<center>
+<h1>Select the Date</h1>
+<input type="date" id="date">
+</center>
+</div>
+<br>
+<div>
+<center>
+<h1>Select The Product</h1>
+<input list="product">
+  <datalist id="product">
+    <option value="Face Wash">
+    <option value="Hand Wash">
+    <option value="Sanitizer">
+    <option value="Toothpaste">
+  </datalist>
+<br><br>
+<input type="submit" id="button" value="Press To Submit">
+</div>
+</form>
+</body>
+</html>
